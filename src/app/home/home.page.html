@@ -1,20 +1,60 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+<ion-content>
+  <ion-header>
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+      <ion-icon name="film-outline" slot="start"></ion-icon>
+      <ion-searchbar placeholder="" search-icon="none" slot="end"/>
     </ion-toolbar>
   </ion-header>
+  <div class="main-film">
+    <div class="infos">
+      <h1>Halo</h1>
+      <div class="stars">
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star-half-outline"></ion-icon>
+      </div>
+      <h2>4.1/5</h2>
+    </div>
+    <div class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+      been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+      scrambled it to make a type specimen book.
+    </div>
+  </div>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <div class="reco">
+    <h3>Vous aimerez peut être</h3>
+    <div class="cards">
+      <div class="card">
+        <img alt="Film"
+             src="https://i0.wp.com/otakugame.fr/wp-content/uploads/2024/06/1717458577_maxresdefault.jpg?resize=520%2C293&quality=100&strip=all&ssl=1"/>
+        <p>Venomee</p>
+      </div>
+      <div class="card">
+        <img alt="Film"
+             src="https://i0.wp.com/otakugame.fr/wp-content/uploads/2024/06/1717458577_maxresdefault.jpg?resize=520%2C293&quality=100&strip=all&ssl=1"/>
+        <p>Venomee</p>
+      </div>
+      <div class="card">
+        <img alt="Film"
+             src="https://i0.wp.com/otakugame.fr/wp-content/uploads/2024/06/1717458577_maxresdefault.jpg?resize=520%2C293&quality=100&strip=all&ssl=1"/>
+        <p>Venomee</p>
+      </div>
+      <div class="card">
+        <img alt="Film"
+             src="https://i0.wp.com/otakugame.fr/wp-content/uploads/2024/06/1717458577_maxresdefault.jpg?resize=520%2C293&quality=100&strip=all&ssl=1"/>
+        <p>Venomee</p>
+      </div>
+      <div class="card">
+        <img alt="Film"
+             src="https://i0.wp.com/otakugame.fr/wp-content/uploads/2024/06/1717458577_maxresdefault.jpg?resize=520%2C293&quality=100&strip=all&ssl=1"/>
+        <p>Venomee</p>
+      </div>
+      <app-custom-card [title]="'test1'" src="../../assets/images/background.png"/>
+      <app-custom-card [title]="'test2'" src="../../assets/images/background.png"/>
+      <app-custom-card [title]="'test3'" src="../../assets/images/background.png"/>
+      <app-custom-card [title]="'test4'" src="../../assets/images/background.png"/>
+    </div>
   </div>
 </ion-content>

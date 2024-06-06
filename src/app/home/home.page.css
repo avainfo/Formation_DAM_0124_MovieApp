@@ -1,0 +1,92 @@
+ion-content {
+  --background: none;
+  background: url("../../assets/images/background.png") no-repeat center;
+  background-size: cover;
+}
+
+ion-toolbar {
+  --background: none;
+  --border-style: none;
+}
+
+ion-toolbar > ion-icon {
+  height: 4vh;
+  width: 4vh;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  margin-top: 1vh;
+}
+
+ion-toolbar > ion-searchbar {
+  margin-top: 1vh;
+  --background: rgba(255, 255, 255, 0.6);
+  height: 4vh;
+  width: 60vw;
+  margin-right: 5vw;
+  --border-radius: 100vw;
+}
+
+.main-film {
+  margin-top: calc(50vh - 5vh - (25vh / 2));
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2vh 7vw;
+}
+
+.infos > h1 {
+  margin-top: 0;
+}
+
+.infos > h2 {
+  font-size: 16px;
+  margin: 0;
+}
+
+
+.reco {
+  position: absolute;
+  bottom: 0;
+  height: 20vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.reco h3 {
+  margin-left: 5vw;
+  margin-top: 2vh;
+  margin-bottom: 0;
+}
+
+.reco .cards {
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+
+}
+
+.reco .cards::-webkit-scrollbar {
+  display: none;
+}
+
+.reco .card {
+  width: 50vw;
+  padding: 0 10vw;
+}
+
+.reco .card img {
+  max-width: unset;
+  width: 45vw;
+}
+
+.reco .card p {
+  position: relative;
+  margin: -3vh 0 0;
+  width: 45vw;
+  background: rgba(0, 0, 0, 0.75);
+  padding: 5px 0 0 15px;
+  height: 3vh;
+}
+
