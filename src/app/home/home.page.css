@@ -57,7 +57,7 @@ ion-toolbar > ion-searchbar {
 .reco h3 {
   margin-left: 5vw;
   margin-top: 2vh;
-  margin-bottom: 0;
+  margin-bottom: 1vh;
 }
 
 .reco .cards {
@@ -70,23 +70,3 @@ ion-toolbar > ion-searchbar {
 .reco .cards::-webkit-scrollbar {
   display: none;
 }
-
-.reco .card {
-  width: 50vw;
-  padding: 0 10vw;
-}
-
-.reco .card img {
-  max-width: unset;
-  width: 45vw;
-}
-
-.reco .card p {
-  position: relative;
-  margin: -3vh 0 0;
-  width: 45vw;
-  background: rgba(0, 0, 0, 0.75);
-  padding: 5px 0 0 15px;
-  height: 3vh;
-}
-

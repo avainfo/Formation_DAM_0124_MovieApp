@@ -9,4 +9,7 @@ export class HomePage {
 
   constructor() {}
 
+  changeBackground(src: string) {
+    console.log(src)
+  }
 }

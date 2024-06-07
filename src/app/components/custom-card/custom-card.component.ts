@@ -8,13 +8,14 @@ import {Component, Input, OnInit} from '@angular/core';
 export class CustomCardComponent implements OnInit {
 
   @Input() title: string = "";
+  @Input() src: string = "";
 
   constructor() {
   }
 
   ngOnInit() {
-    this.title = "";
     console.log(this.title)
+    console.log(this.src)
   }
 
 }

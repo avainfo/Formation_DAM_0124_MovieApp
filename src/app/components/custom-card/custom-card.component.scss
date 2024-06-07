@@ -1,0 +1,25 @@
+.card {
+  width: 45vw;
+  margin: 0 5vw;
+  border-radius: 3vw;
+  padding: 0;
+  overflow: hidden;
+}
+
+.card img {
+  max-width: unset;
+  width: 45vw;
+}
+
+.card p {
+  position: relative;
+  margin: -3vh 0 0;
+  width: 45vw;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 3vh;
+}
+

@@ -26,35 +26,12 @@
   <div class="reco">
     <h3>Vous aimerez peut être</h3>
     <div class="cards">
-      <div class="card">
-        <img alt="Film"
-             src="https://i0.wp.com/otakugame.fr/wp-content/uploads/2024/06/1717458577_maxresdefault.jpg?resize=520%2C293&quality=100&strip=all&ssl=1"/>
-        <p>Venomee</p>
-      </div>
-      <div class="card">
-        <img alt="Film"
-             src="https://i0.wp.com/otakugame.fr/wp-content/uploads/2024/06/1717458577_maxresdefault.jpg?resize=520%2C293&quality=100&strip=all&ssl=1"/>
-        <p>Venomee</p>
-      </div>
-      <div class="card">
-        <img alt="Film"
-             src="https://i0.wp.com/otakugame.fr/wp-content/uploads/2024/06/1717458577_maxresdefault.jpg?resize=520%2C293&quality=100&strip=all&ssl=1"/>
-        <p>Venomee</p>
-      </div>
-      <div class="card">
-        <img alt="Film"
-             src="https://i0.wp.com/otakugame.fr/wp-content/uploads/2024/06/1717458577_maxresdefault.jpg?resize=520%2C293&quality=100&strip=all&ssl=1"/>
-        <p>Venomee</p>
-      </div>
-      <div class="card">
-        <img alt="Film"
-             src="https://i0.wp.com/otakugame.fr/wp-content/uploads/2024/06/1717458577_maxresdefault.jpg?resize=520%2C293&quality=100&strip=all&ssl=1"/>
-        <p>Venomee</p>
-      </div>
-      <app-custom-card [title]="'test1'" src="../../assets/images/background.png"/>
-      <app-custom-card [title]="'test2'" src="../../assets/images/background.png"/>
-      <app-custom-card [title]="'test3'" src="../../assets/images/background.png"/>
-      <app-custom-card [title]="'test4'" src="../../assets/images/background.png"/>
+      <app-custom-card [title]="'Test 1'" src="../../assets/images/background.png" (imageClicked)="changeBackground($event)"/>
+      <app-custom-card [title]="'Test 2'" src="../../assets/images/background2.png" (imageClicked)="changeBackground($event)"/>
+      <app-custom-card [title]="'Test 3'" src="../../assets/images/background3.png" (imageClicked)="changeBackground($event)"/>
+      <app-custom-card [title]="'Test 4'" src="../../assets/images/background4.png" (imageClicked)="changeBackground($event)"/>
+      <app-custom-card [title]="'Test 5'" src="../../assets/images/background5.png" (imageClicked)="changeBackground($event)"/>
+      <app-custom-card [title]="'Test 6'" src="../../assets/images/background6.png" (imageClicked)="changeBackground($event)"/>
     </div>
   </div>
 </ion-content>
