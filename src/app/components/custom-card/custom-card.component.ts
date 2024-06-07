@@ -1,4 +1,5 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
+import {MovieInfo} from "../../utils/movie-info";
 
 @Component({
   selector: 'app-custom-card',
@@ -9,13 +10,23 @@ export class CustomCardComponent implements OnInit {
 
   @Input() title: string = "";
   @Input() src: string = "";
+  @Input() description: string = "";
+  @Output() imageClicked: EventEmitter<any> = new EventEmitter<unknown>();
 
   constructor() {
   }
 
   ngOnInit() {
+    console.log("=".repeat(10))
     console.log(this.title)
     console.log(this.src)
+    console.log(this.description)
+    console.log("=".repeat(10))
+  }
+
+  onImageClicked() {
+    const movieInfo = new MovieInfo(this.title, this.src, this.description);
+    this.imageClicked.emit(movieInfo);
   }
 
 }
